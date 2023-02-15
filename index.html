@@ -16,29 +16,37 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrapper">
-        <h1>Kyiv</h1>
-        <ul>
-          <li>Wednesday 23:05</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="partly cloudy"
-            />
-            12℃ | ℉
-          </div>
-          <div class="col-6">
+      <div class="weather-app">
+        <div class="wrapper">
+          <div class="overview">
+            <h1>Kyiv</h1>
             <ul>
-              <li>Precipitation 0%</li>
-              <li>Humidity 3%</li>
-              <li>Wind: 2km/h</li>
+              <li>Wednesday 23:05</li>
+              <li>Clear</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="partly cloudy"
+                />
+                <div>
+                  <strong id="temperature"> 12</strong
+                  ><span class="units">℃ | <a href="#">℉</a> </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation 0%</li>
+                <li>Humidity 3%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
         <small>
           <a
             href="https://github.com/Tasha-berezhko/Vanilla-weather"
