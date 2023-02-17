@@ -11,6 +11,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="src/script.js"></script>
     <title>Weather App</title>
   </head>
@@ -19,10 +20,10 @@
       <div class="weather-app">
         <div class="wrapper">
           <div class="overview">
-            <h1>Kyiv</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Wednesday 23:05</li>
-              <li>Clear</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -41,8 +42,8 @@
             <div class="col-6">
               <ul>
                 <li>Precipitation 0%</li>
-                <li>Humidity 3%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
