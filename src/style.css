@@ -9,6 +9,7 @@ h1 {
   line-height: 28px;
   margin-bottom: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -54,4 +55,15 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  cursor: default;
+}
+#fahrenhait-link {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  cursor: default;
 }
